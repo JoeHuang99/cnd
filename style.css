@@ -1,0 +1,80 @@
+
+
+
+/* 我是分隔線 */
+.container-all{
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar{
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    transition: 1s;
+}
+
+#sidebar.active{
+    margin-left: -200px;
+}
+
+.container-right{
+    background-color: white;
+    width:100%;
+    height: 100vh;
+}
+
+.collapse-btn{
+    position: relative;
+    margin-left: 200px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: none;
+    font-size: 25px;
+}
+
+.collapse-btn:hover{
+    background-color: white;
+    color: rgb(51, 51, 51);
+    transition: 1s;
+}
+
+#sidebar p{
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#sidebar ul li a{
+    padding-left: 10px;
+    font-size: 24px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+#sidebar ul li a:hover{
+    color: rgb(51, 51, 51);
+    background: white;
+    transition: 1s;
+}
+
+.fa-solid{
+    float: right;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+#logo{
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-right: 45px;
+    height: 150px;
+    width: 150px;
+}
+
+#log_out {
+    margin-top: 400px;
+}
