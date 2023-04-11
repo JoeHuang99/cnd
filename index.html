@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入頁面</title>
+    <!-- CSS 連結 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JQuery 連結 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- JS 連結 -->
+    <script src="script.js"></script>
+    <!-- FontAwesome 連結 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap 連結 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <!-- 右鍵選單 -->
+    
+
+    <!-- 全部的Container -->
+    <div class="container-all">
+        <!-- 左邊的Container -->
+        <div class="container-left">
+            <!-- 導覽列 -->
+            <nav id="sidebar">
+                <!-- 縮放按鈕 -->
+                <button type="button" id="collapse" class="collapse-btn">
+                    <!-- 縮放按鈕圖示 -->
+                    <i class="fa-solid fa-arrows-left-right"></i>
+                </button>
+                
+                <!-- 主列表 -->
+                <ul class="list-unstyled">
+                    <img src="台GG.png" id="logo"></img>
+                    <p>名字：王小明</p>
+                    <p>員工編號：A12345</p>
+                    <p>部門：研發部</p>
+                    <li>
+                        <a href="#">我的文件 <i class="fa-solid fa-file"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">部門文件 <i class="fa-solid fa-user-group"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">公開文件 <i class="fa-solid fa-globe"></i></a>
+                    </li>
+
+                    <li id="log_out">
+                        <a href="#">登出 <i class="fa-solid fa-right-from-bracket"></i></a>
+                    </li>
+                    
+                </ul>
+
+            </nav>
+        </div>
+
+        <!-- 右邊的Container -->
+        <div class="container-right">
+            <div class="container-fluid">
+                台GG
+            </div>
+        </div>
+    </div>
+</body>
+</html>
