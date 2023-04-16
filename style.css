@@ -1,5 +1,55 @@
+.wrapper{
+  visibility: hidden;
+  position: absolute;
+  width: 300px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+}
+.wrapper .menu{
+  padding: 10px 12px;
+}
+.content .item{
+  list-style: none;
+  font-size: 22px;
+  height: 50px;
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  padding: 0 5px 0 10px;
+}
+.content .item:hover{
+  background: #f2f2f2;
+}
+.content .item span{
+  margin-left: 8px;
+  font-size: 19px;
+}
 
-
+.content .share{
+  position: relative;
+  justify-content: space-between;
+}
+.share .share-menu{
+  position: absolute;
+  background: #fff;
+  width: 200px;
+  right: -200px;
+  top: -35px;
+  padding: 13px;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+  transition: 0.2s ease;
+}
+.share:hover .share-menu{
+  opacity: 1;
+  pointer-events: auto;
+}
 
 /* 我是分隔線 */
 .container-all{
@@ -17,6 +67,19 @@
 
 #sidebar.active{
     margin-left: -200px;
+}
+
+#version{
+  width: 250px;
+  height: 100vh;
+  right: 0px;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  transition: 1s;
+}
+
+#version.active{
+  margin-left: -200px;
 }
 
 .container-right{
@@ -67,6 +130,13 @@
     padding-top: 5px;
 }
 
+.material-symbols-outlined{
+    float: right;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+
 #logo{
     margin-left: 45px;
     margin-right: 45px;
@@ -76,5 +146,99 @@
 }
 
 #log_out {
-    margin-top: 400px;
+    margin-top: 200px;
+}
+
+p {
+  line-height: 1.0;
+}
+
+/* 搜尋欄 */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 200px;
+  background: rgb(51, 51, 51);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav,
+.nav .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  justify-content: space-between;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#searchIcon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 75px;
+}
+
+#expandIcon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 75px;
+}
+
+.nav .search-box {
+  position: absolute;
+  left: 100px;
+  height: 45px;
+  max-width: 555px;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s linear;
+}
+
+/* 按下搜尋icon後 */
+.nav.open-search .search-box {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* 搜尋框 */
+.search-box .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  color: rgb(51, 51, 51);
+  transform: translateY(-50%);
+}
+
+.search-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 0 15px 0 45px;
+}
+
+/* 擴展icon */
+.expand-icon {
+  margin-right: 100px;
+}
+
+/* new */
+.version-table{
+  border: 1px solid #000000;
+  width: 200px;
+  height: 500px;
+  margin-right: 100px;
+  margin-top: 100px;
+  right: 0;
 }

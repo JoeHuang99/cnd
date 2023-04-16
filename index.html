@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- JQuery 連結 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <!-- JS 連結 -->
-    <script src="script.js"></script>
+    <!-- Google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- FontAwesome 連結 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Bootstrap 連結 -->
@@ -26,33 +26,35 @@
     <!-- 全部的Container -->
     <div class="container-all">
         <!-- 左邊的Container -->
-        <div class="container-left">
+        <div class="container-left" id="main-menu">
             <!-- 導覽列 -->
             <nav id="sidebar">
                 <!-- 縮放按鈕 -->
                 <button type="button" id="collapse" class="collapse-btn">
                     <!-- 縮放按鈕圖示 -->
-                    <i class="fa-solid fa-arrows-left-right"></i>
+                    <span class="material-symbols-outlined">swap_horiz</span>
                 </button>
                 
                 <!-- 主列表 -->
                 <ul class="list-unstyled">
                     <img src="台GG.png" id="logo"></img>
+                    <img src="員工頭貼.png" id="logo"></img>
+
                     <p>名字：王小明</p>
                     <p>員工編號：A12345</p>
                     <p>部門：研發部</p>
                     <li>
-                        <a href="#">我的文件 <i class="fa-solid fa-file"></i></a>
+                        <a href="#">我的文件 <span class="material-symbols-outlined">person</span></a>
                     </li>
                     <li>
-                        <a href="#">部門文件 <i class="fa-solid fa-user-group"></i></a>
+                        <a href="#">部門文件 <span class="material-symbols-outlined">group</span></a>
                     </li>
                     <li>
-                        <a href="#">公開文件 <i class="fa-solid fa-globe"></i></a>
+                        <a href="#">公開文件 <span class="material-symbols-outlined">public</span></a>
                     </li>
 
                     <li id="log_out">
-                        <a href="#">登出 <i class="fa-solid fa-right-from-bracket"></i></a>
+                        <a href="#">登出 <span class="material-symbols-outlined">logout</span></a>
                     </li>
                     
                 </ul>
@@ -62,9 +64,75 @@
 
         <!-- 右邊的Container -->
         <div class="container-right">
-            <div class="container-fluid">
-                台GG
+            <!-- 右鍵菜單 -->
+            <div class="wrapper">
+              <div class="content">
+                <ul class="menu">
+                  
+                  <li class="item">
+                    <i class="uil-file-plus-alt"></i>
+                    <span>新增檔案</span>
+                  </li>
+                  <li class="item">
+                    <i class="uil-file-minus-alt"></i>
+                    <span>刪除檔案</span>
+                  </li>
+                  <li class="item">
+                    <i class="uil-file-edit-alt"></i>
+                    <span>重新命名</span>
+                  </li>
+                  <li class="item share">
+                    <div>
+                      <i class="uil uil-eye"></i>
+                      <span>權限</span>
+                    </div>
+                    <i class="uil uil-angle-right"></i>
+                    <ul class="share-menu">
+                      <li class="item">
+                        <span>私人</span>
+                      </li>
+                      <li class="item">
+                        <span>部門</span>
+                      </li>
+                      <li class="item">
+                        <span>公開</span>
+                      </li>
+                      <li class="item">
+                        <span>部門公開</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
+
+            <!-- 搜尋框 -->
+            <nav class="nav">
+              <!-- 搜尋的icon -->
+              <i class="uil uil-search search-icon" id="searchIcon"></i>
+              <!-- 展開的icon -->
+              <i class="uil uil-bars expand-icon" id="expandIcon"></i>
+              
+              <!-- 搜尋框 -->
+              <div class="search-box">
+                <!-- 搜尋的icon -->
+                <i class="uil uil-search search-icon"></i>
+                <!-- 搜尋框的文字 -->
+                <input type="text" placeholder="Search here..." />
+              </div>
+            </nav>
+
+            <!-- 版本列 -->
+            <div id="version-table" class="version-table">
+              <div>123456</div>
+              <div>123456</div>
+              <div>123456</div>
+              <div>123456</div>
+              <div>123456</div>
+              <div>123456</div>
+            </div>
+          
+            <script src="script.js"></script>
         </div>
     </div>
 </body>
