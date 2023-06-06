@@ -1,5 +1,5 @@
 ## 安裝套件
-在對應專案資料夾底下的terminal中依序輸入以下指令，安裝必要套件，可參考package.json下的套件版本。
+切換到專案資料夾目錄下，於Terminal中輸入以下指令，安裝必要套件，套件版本可參考package.json。
 ``` 
 npm install react-scripts react react-dom
 npm install semantic-ui-react semantic-ui-css react-router-dom
