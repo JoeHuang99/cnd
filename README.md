@@ -7,7 +7,7 @@ npm install firebase
 npm install -g firebase-tools
 ```
     
-## 執行程式。
+## 執行程式
 ```
 npm start
 ```
